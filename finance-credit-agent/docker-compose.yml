@@ -1,0 +1,54 @@
+version: "3.9"
+
+services:
+  agent:
+    build: .
+    container_name: finance-credit-agent
+    env_file:
+      - .env
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+      - ./outputs:/app/outputs
+      - ./finance_agent.db:/app/finance_agent.db
+    command: python run.py
+    networks:
+      - finance-net
+
+  dashboard:
+    build: .
+    container_name: finance-dashboard
+    env_file:
+      - .env
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+      - ./outputs:/app/outputs
+      - ./finance_agent.db:/app/finance_agent.db
+    command: streamlit run app/ui/dashboard.py --server.port=8501 --server.address=0.0.0.0
+    depends_on:
+      - agent
+    networks:
+      - finance-net
+
+  api:
+    build: .
+    container_name: finance-api
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+      - ./outputs:/app/outputs
+      - ./finance_agent.db:/app/finance_agent.db
+    command: uvicorn app.api.main:app --host 0.0.0.0 --port 8000 --reload
+    networks:
+      - finance-net
+
+networks:
+  finance-net:
+    driver: bridge

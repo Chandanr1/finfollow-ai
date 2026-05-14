@@ -1,0 +1,16 @@
+invoice_id,client_name,client_email,amount_due,due_date,invoice_date,currency,payment_terms,contact_phone,notes
+INV-2024-001,Apex Technologies Ltd,billing@apextech.com,15750.00,2026-05-06,2026-04-06,USD,Net 30,+1-415-555-0101,Key account — Q1 software license
+INV-2024-002,Meridian Consulting Group,accounts@meridiancg.com,8200.50,2026-04-30,2026-03-31,USD,Net 30,+1-212-555-0202,Professional services retainer
+INV-2024-003,Blue Horizon Finance,finance@bluehorizon.com,45000.00,2026-04-22,2026-03-23,USD,Net 30,+1-310-555-0303,Enterprise software renewal
+INV-2024-004,Sunrise Global Imports,ar@sunriseglobal.com,3450.75,2026-05-08,2026-04-08,USD,Net 30,+1-713-555-0404,Freight and logistics invoice
+INV-2024-005,TechNova Solutions,invoices@technova.io,22000.00,2026-04-13,2026-03-14,USD,Net 30,+1-512-555-0505,Cloud infrastructure deployment
+INV-2024-006,Greenfield Partners LLC,payments@greenfieldp.com,67500.00,2026-04-06,2026-03-07,USD,Net 30,+1-617-555-0606,Real estate advisory services
+INV-2024-007,Pacific Rim Trading Co,treasury@pacificrim.co,9800.00,2026-03-30,2026-02-28,USD,Net 30,+1-206-555-0707,Import duties and customs
+INV-2024-008,Delta Systems Group,accounts@deltasystems.net,31250.00,2026-03-22,2026-02-20,USD,Net 30,+1-404-555-0808,Annual maintenance contract
+INV-2024-009,Aurora Healthcare Ltd,billing@aurorahc.com,5600.25,2026-05-10,2026-04-10,USD,Net 30,+1-312-555-0909,Medical supply order
+INV-2024-010,Cascade Digital Media,payments@cascadedigital.com,18900.00,2026-04-18,2026-03-19,USD,Net 30,+1-503-555-1010,Digital marketing campaign
+INV-2024-011,Sterling Capital Advisors,ar@sterlingcap.com,125000.00,2026-03-14,2026-02-12,USD,Net 30,+1-212-555-1111,Investment advisory fees
+INV-2024-012,Nexus Manufacturing Corp,finance@nexusmfg.com,28750.00,2026-04-25,2026-03-26,USD,Net 30,+1-313-555-1212,Raw materials supply
+INV-2024-013,Vanguard Legal Services,billing@vanguardlegal.com,7200.00,2026-05-12,2026-04-12,USD,Net 30,+1-202-555-1313,Legal retainer Q2
+INV-2024-014,Titan Energy Solutions,accounts@titanenergy.com,89000.00,2026-03-06,2026-02-04,USD,Net 30,+1-713-555-1414,Energy audit and consulting
+INV-2024-015,Cobalt Innovations Inc,invoice@cobaltinno.com,4125.00,2026-05-09,2026-04-09,USD,Net 30,+1-415-555-1515,Product prototype development
