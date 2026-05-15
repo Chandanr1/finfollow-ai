@@ -317,26 +317,3 @@ CREATE TABLE email_history (
 
 ---
 
-## Future Improvements
-
-- [ ] Multi-tenant support (per-company configurations)
-- [ ] REST API (FastAPI) for external integrations
-- [ ] PDF invoice attachment generation
-- [ ] Email open/click tracking
-- [ ] Human approval workflow for Stage 4 emails
-- [ ] ML-based payment prediction (beyond heuristic risk scoring)
-- [ ] Slack/Teams notification for escalations
-- [ ] OAuth2 email authentication
-- [ ] Multi-language email support
-
----
-
-## Why This Project Stands Out
-
-1. **Production architecture** — not a tutorial script. Real separation of concerns, proper dependency injection, singleton patterns.
-2. **LangGraph correctness** — proper `TypedDict` state, conditional routing, compiled graph.
-3. **Security-first** — prompt injection protection, PII masking, input sanitization, structured validation.
-4. **Zero hallucinations** — post-generation validation ensures every email contains real invoice data.
-5. **Operational resilience** — tenacity retries, fallback email templates, non-crashing error handling.
-6. **Complete observability** — JSON audit logs, SQLite audit trail, Streamlit dashboard, optional LangSmith.
-7. **Works without an API key** — dry-run + fallback mode means the entire system runs demonstrably without spending money.
